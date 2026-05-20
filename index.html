@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chill & Grill | Premium Bistro & Sweets</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#Home"><img src="images/logo.png" alt="Chill & Grill Logo" /></a>
+      </div>
+      
+      <ul id="navMenu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Menu">Menu</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="#Review">Review</a></li>
+        <li><a href="#Order">Order</a></li>
+      </ul>
+      
+      <div class="icon">
+        <i class="fa-solid fa-magnifying-glass" id="searchIconBtn" title="Search Menu"></i>
+        <i class="fa-solid fa-heart" id="wishlistIconBtn" title="Favorites"></i>
+        
+        <div class="cart-icon-wrapper" id="cartIconBtn" title="View Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="cartBadgeCount">0</span>
+        </div>
+        
+        <i class="fa-solid fa-moon" id="themeToggleBtn" title="Toggle Theme"></i>
+        <i class="fa-solid fa-bars" id="mobileMenuBtn" title="Toggle Menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="Home">
+    <div class="maintext">
+      <div class="main-left">
+        <h1>Welcome to <br><span class="chill">Chill</span> &amp; <span class="grill">Grill</span></h1>
+        <p>"Food made with Love, Served with Smiles - Enjoy every single bite with our premium curated recipes!"</p>
+        <div class="main-bttn">
+          <a href="#Order">Order Now</a>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      
+      <div class="main-img">
+        <img src="images/burger.png" alt="Signature Chill &amp; Grill Burger" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <div class="about" id="About">
+    <div class="about-main">
+      <div class="img">
+        <img src="images/about_img.jpg" alt="Our Cozy Kitchen" />
+      </div>
+      
+      <div class="txt">
+        <h1><span>About</span> Us</h1>
+        <h3>Why Choose Us?</h3>
+        <p><span>Chill &amp; Grill</span> - Your ultimate spot for savory bites and sweet delights! We're all about serving fresh, flavorful, and exceptionally prepared dishes that make you smile. From cheesy wood-fired pizzas and juicy flame-grilled burgers to gourmet cupcakes and melt-in-your-mouth chocolate brownies, everything is made from scratch with premium ingredients. Whether you're hanging out, grabbing a fast lunch, or celebrating a major milestone, we have something to satisfy both hunger and heart.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Section -->
+  <div class="menu" id="Menu">
+    <h1>Our <span>Menu</span></h1>
+    
+    <div class="menu-box">
+      <!-- 1. Pizza Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/pizza.jpeg" alt="Wood-fired Pizza" />
+        </div>
+        <div class="menu-info">
+          <h3>Pizza</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $9.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Pizza</option>
+            <option value="Margherita" data-price="9.99">Margherita - $9.99</option>
+            <option value="Farmhouse" data-price="11.99">Farmhouse - $11.99</option>
+            <option value="Paneer Tikka" data-price="12.99">Paneer Tikka - $12.99</option>
+            <option value="Peppy Paneer" data-price="12.99">Peppy Paneer - $12.99</option>
+            <option value="Chicken Loaded" data-price="14.99">Chicken Loaded - $14.99</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. Burger Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/burgerr.jpeg" alt="Juicy Burger" />
+        </div>
+        <div class="menu-info">
+          <h3>Burger</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $5.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Burger</option>
+            <option value="Veg Burger" data-price="5.99">Veg Burger - $5.99</option>
+            <option value="Cheese Burger" data-price="6.99">Cheese Burger - $6.99</option>
+            <option value="Double Patty" data-price="8.99">Double Patty - $8.99</option>
+            <option value="Paneer Burger" data-price="7.99">Paneer Burger - $7.99</option>
+            <option value="Chicken Burger" data-price="8.99">Chicken Burger - $8.99</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. Noodles Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/noodles.jpeg" alt="Stir-fried Noodles" />
+        </div>
+        <div class="menu-info">
+          <h3>Noodles</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $7.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Noodles</option>
+            <option value="Veg Noodles" data-price="7.99">Veg Noodles - $7.99</option>
+            <option value="Hakka Noodles" data-price="8.99">Hakka Noodles - $8.99</option>
+            <option value="Egg Noodles" data-price="9.49">Egg Noodles - $9.49</option>
+            <option value="Chilli Garlic" data-price="9.99">Chilli Garlic - $9.99</option>
+            <option value="Chicken Noodles" data-price="10.99">Chicken Noodles - $10.99</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 4. Cake Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/cake.jpeg" alt="Decadent Cake" />
+        </div>
+        <div class="menu-info">
+          <h3>Cake</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $17.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Cake</option>
+            <option value="Chocolate Cake" data-price="19.99">Chocolate - $19.99</option>
+            <option value="ButterScotch Cake" data-price="18.99">ButterScotch - $18.99</option>
+            <option value="Red Velvet Cake" data-price="22.99">Red Velvet - $22.99</option>
+            <option value="Black Forest Cake" data-price="20.99">Black Forest - $20.99</option>
+            <option value="Pineapple Cake" data-price="17.99">Pineapple - $17.99</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 5. Momos Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/momos.jpeg" alt="Steamed Momos" />
+        </div>
+        <div class="menu-info">
+          <h3>Momos</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $6.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Momo</option>
+            <option value="Veg Momo" data-price="6.99">Veg Momo - $6.99</option>
+            <option value="Cheese Momo" data-price="7.99">Cheese Momo - $7.99</option>
+            <option value="Afghani Momo" data-price="8.99">Afghani Momo - $8.99</option>
+            <option value="Paneer Momo" data-price="8.99">Paneer Momo - $8.99</option>
+            <option value="Chicken Momo" data-price="9.99">Chicken Momo - $9.99</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 6. Pastry Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/pastry.jpeg" alt="Fresh Pastry" />
+        </div>
+        <div class="menu-info">
+          <h3>Pastry</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $2.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Pastry</option>
+            <option value="Chocolate Pastry" data-price="3.49">Chocolate - $3.49</option>
+            <option value="Butterscotch Pastry" data-price="3.49">Butterscotch - $3.49</option>
+            <option value="Red Velvet Pastry" data-price="3.99">Red Velvet - $3.99</option>
+            <option value="Black Forest Pastry" data-price="3.49">Black Forest - $3.49</option>
+            <option value="Pineapple Pastry" data-price="2.99">Pineapple - $2.99</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 7. Donut Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/donut.jpeg" alt="Glazed Donut" />
+        </div>
+        <div class="menu-info">
+          <h3>Donut</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $1.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Donut</option>
+            <option value="Vanilla Frosted Donut" data-price="2.49">Vanilla frosted - $2.49</option>
+            <option value="Custard Donut" data-price="2.99">Custard - $2.99</option>
+            <option value="Chocolate Frosted Donut" data-price="2.49">Chocolate frosted - $2.49</option>
+            <option value="Glazed Donut" data-price="1.99">Glazed - $1.99</option>
+            <option value="Jelly Filled Donut" data-price="2.99">Jelly filled - $2.99</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 8. Cupcake Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/cupcake.webp" alt="Gourmet Cupcake" />
+        </div>
+        <div class="menu-info">
+          <h3>Cupcake</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $2.29</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Cupcake</option>
+            <option value="Choco Chip Cupcake" data-price="2.29">Choco chip - $2.29</option>
+            <option value="Pistachio Cupcake" data-price="2.49">Pistachio - $2.49</option>
+            <option value="Caramel Crunch Cupcake" data-price="2.79">Caramel Crunch - $2.79</option>
+            <option value="Oreo Cupcake" data-price="2.79">Oreo - $2.79</option>
+            <option value="Fudge Cupcake" data-price="2.99">Fudge - $2.99</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 9. Dosa Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/dosa.jpeg" alt="South Indian Dosa" />
+        </div>
+        <div class="menu-info">
+          <h3>Dosa</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $6.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Dosa</option>
+            <option value="Plain Dosa" data-price="6.99">Plain Dosa - $6.99</option>
+            <option value="Masala Dosa" data-price="7.99">Masala Dosa - $7.99</option>
+            <option value="Paneer Dosa" data-price="8.99">Paneer Dosa - $8.99</option>
+            <option value="Rava Dosa" data-price="8.49">Rava Dosa - $8.49</option>
+            <option value="Cheese Masala Dosa" data-price="9.49">Cheese Masala - $9.49</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 10. Idli Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/idli.jpg" alt="Steamed Idlis" />
+        </div>
+        <div class="menu-info">
+          <h3>Idli</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $4.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Idli</option>
+            <option value="Plain Idli" data-price="4.99">Plain Idli - $4.99</option>
+            <option value="Rava Idli" data-price="5.49">Rava Idli - $5.49</option>
+            <option value="Stuffed Idli" data-price="5.99">Stuffed Idli - $5.99</option>
+            <option value="Masala Idli" data-price="5.99">Masala Idli - $5.99</option>
+            <option value="Fried Idli" data-price="6.49">Fried Idli - $6.49</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 11. Coffee Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/coffee.jpg" alt="Freshly Brewed Coffee" />
+        </div>
+        <div class="menu-info">
+          <h3>Coffee</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $2.49</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Coffee</option>
+            <option value="Americano" data-price="2.99">Americano - $2.99</option>
+            <option value="Cappuccino" data-price="3.99">Cappuccino - $3.99</option>
+            <option value="Mocha Coffee" data-price="4.49">Mocha - $4.49</option>
+            <option value="Latte" data-price="3.99">Latte - $3.99</option>
+            <option value="Espresso" data-price="2.49">Espresso - $2.49</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 12. Fries Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/fries.webp" alt="Crispy French Fries" />
+        </div>
+        <div class="menu-info">
+          <h3>Fries</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $3.49</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Fries</option>
+            <option value="Plain Salted Fries" data-price="3.49">Plain salted - $3.49</option>
+            <option value="Peri Peri Fries" data-price="3.99">Peri Peri Fries - $3.99</option>
+            <option value="Bacon &amp; Cheese Fries" data-price="4.99">Bacon &amp; Cheese - $4.99</option>
+            <option value="Curly Fries" data-price="4.29">Curly Fries - $4.29</option>
+            <option value="Cheese Fries" data-price="4.49">Cheese Fries - $4.49</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 13. Pasta Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/pasta.avif" alt="Rich Pasta" />
+        </div>
+        <div class="menu-info">
+          <h3>Pasta</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $7.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Pasta</option>
+            <option value="Masala Pasta" data-price="8.99">Masala Pasta - $8.99</option>
+            <option value="Red Sauce Pasta" data-price="9.99">Red Sauce - $9.99</option>
+            <option value="White Sauce Pasta" data-price="9.99">White Sauce - $9.99</option>
+            <option value="Plain Pasta" data-price="7.99">Plain Pasta - $7.99</option>
+            <option value="Cheese Pasta" data-price="10.99">Cheese Pasta - $10.99</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 14. Sandwich Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/sandwich.jpg" alt="Toasted Sandwich" />
+        </div>
+        <div class="menu-info">
+          <h3>Sandwich</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $4.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Sandwich</option>
+            <option value="Veg Sandwich" data-price="4.99">Veg Sandwich - $4.99</option>
+            <option value="Grilled Sandwich" data-price="5.99">Grilled - $5.99</option>
+            <option value="Cheese Sandwich" data-price="5.49">Cheese Sandwich - $5.49</option>
+            <option value="Paneer Sandwich" data-price="6.49">Paneer Sandwich - $6.49</option>
+            <option value="Chicken Sandwich" data-price="7.49">Chicken Sandwich - $7.49</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <!-- 15. Brownie Card -->
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="images/brownie.webp" alt="Fudge Brownie" />
+        </div>
+        <div class="menu-info">
+          <h3>Brownie</h3>
+          <div class="menu-icon">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="menu-price-display">From $3.99</p>
+          <select class="food-choice">
+            <option value="" data-price="0">Choose Brownie</option>
+            <option value="Chocolate Fudge Brownie" data-price="3.99">Chocolate Fudge - $3.99</option>
+            <option value="Walnut Brownie" data-price="4.29">Walnut - $4.29</option>
+            <option value="Cookies &amp; Cream Brownie" data-price="4.59">Cookies &amp; Cream - $4.59</option>
+            <option value="Cheesecake Swirl Brownie" data-price="4.79">Cheesecake Swirl - $4.79</option>
+            <option value="Brown Butter Brownie" data-price="4.29">Brown Butter - $4.29</option>
+          </select>
+          <button class="add-to-cart-btn">
+            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="Gallery">
+    <h1>Our <span>Gallery</span></h1>
+    <div class="imgbox">
+      <div class="gallery-box">
+        <img src="images/img1.jpg" alt="Gourmet Pizza Slice" />
+      </div>
+      <div class="gallery-box">
+        <img src="images/img2.jpg" alt="Chef preparing burger" />
+      </div>
+      <div class="gallery-box">
+        <img src="images/img3.avif" alt="Fresh baked Donuts" />
+      </div>
+      <div class="gallery-box">
+        <img src="images/img4.jpg" alt="Spicy Noodles cooking" />
+      </div>
+      <div class="gallery-box">
+        <img src="images/img5.jpg" alt="Delicious Pastry slices" />
+      </div>
+      <div class="gallery-box">
+        <img src="images/img6.jpg" alt="Crunchy French Fries" />
+      </div>
+      <div class="gallery-box">
+        <img src="images/img7.jpg" alt="Gourmet Cupcakes lineup" />
+      </div>
+      <div class="gallery-box">
+        <img src="images/img8.jpg" alt="Authentic South Indian Dosa" />
+      </div>
+      <div class="gallery-box">
+        <img src="images/img9.avif" alt="Rich Chocolate Brownies" />
+      </div>
+      <div class="gallery-box">
+        <img src="images/img10.jpeg" alt="Warm espresso cup" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Review Section -->
+  <section class="review" id="Review">
+    <h1>Customer <span>Reviews</span></h1>
+    <div class="review-container">
+      <div class="review-card">
+        <div class="review-img">
+          <img src="images/user1.jpg" alt="Alice Profile" />
+        </div>
+        <div class="review-text">
+          <h3>Alice</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>“The food was absolutely delicious and the service was incredibly quick. Hands down the best burger I've ever had!”</p>
+        </div>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-img">
+          <img src="images/user2.jpeg" alt="Joe Profile" />
+        </div>
+        <div class="review-text">
+          <h3>Joe</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>"The pasta was amazingly creamy &amp; full of authentic flavor. Served in just the right portion size!"</p>
+        </div>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-img">
+          <img src="images/user3.jpg" alt="Tanya Profile" />
+        </div>
+        <div class="review-text">
+          <h3>Tanya</h3>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>“The red velvet cake was simply divine - incredibly moist and absolutely delicious. Recommended 100%!”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Section -->
+  <section class="order" id="Order">
+    <h1><span>Order</span> Now</h1>
+    
+    <div class="order-main">
+      <div class="order-img">
+        <img src="images/order-img.png" alt="Order Food Delivery" />
+      </div>
+      
+      <div class="order-content">
+        <h3>Get your favorite meals delivered straight to your doorstep.</h3>
+        
+        <div class="order-bttn">
+          <a href="#Menu">Browse Menu <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+
+        <form action="#" method="post" id="checkoutForm">
+          <div class="input">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="input">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+
+          <div class="input">
+            <label for="phone">Mob. No.</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required>
+          </div>
+
+          <div class="input">
+            <label for="food">Selected Food (from cart)</label>
+            <input type="text" id="food" name="food" placeholder="Your cart items will auto-populate" readonly required>
+          </div>
+
+          <div class="input">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Number of items" min="1" readonly required>
+          </div>
+
+          <div class="input input-full">
+            <label for="address">Delivery Address</label>
+            <textarea id="address" name="address" placeholder="Enter your full delivery address" rows="3" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Place Order Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-tag">
+        <h2>Locations</h2>
+        <p>New Delhi, India</p>
+        <p>New York, USA</p>
+      </div>
+      
+      <div class="footer-tag">
+        <h2>Quick Links</h2>
+        <p><a href="#Home" style="color: inherit; text-decoration: none;">Home</a></p>
+        <p><a href="#About" style="color: inherit; text-decoration: none;">About</a></p>
+        <p><a href="#Menu" style="color: inherit; text-decoration: none;">Menu</a></p>
+        <p><a href="#Gallery" style="color: inherit; text-decoration: none;">Gallery</a></p>
+        <p><a href="#Order" style="color: inherit; text-decoration: none;">Order</a></p>
+      </div>
+      
+      <div class="footer-tag">
+        <h2>Contact Us</h2>
+        <p>+91 95482 47951</p>
+        <p>+91 92467 86430</p>
+        <p>chill_grill@gmail.com</p>
+      </div>
+      
+      <div class="footer-tag">
+        <h2>Our Services</h2>
+        <p>24/7 Home Delivery</p>
+        <p>Easy Digital Payments</p>
+        <p>Fast Gourmet Catering</p>
+      </div>
+      
+      <div class="footer-tag">
+        <h2>Follow Us</h2>
+        <i class="fa-brands fa-facebook" title="Facebook"></i>
+        <i class="fa-brands fa-instagram" title="Instagram"></i>
+        <i class="fa-brands fa-x-twitter" title="Twitter/X"></i>
+        <i class="fa-brands fa-linkedin-in" title="LinkedIn"></i>
+      </div>
+    </div>
+    
+    <h3 class="end">&copy; 2026 Chill &amp; Grill Premium Bistro. All Rights Reserved.</h3>
+  </footer>
+
+  <!-- Shopping Cart Side Drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h2><i class="fa-solid fa-cart-shopping"></i> Your Cart</h2>
+      <button class="close-cart-btn" id="closeCartBtn">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItemsContainer">
+      <p class="empty-cart-msg">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotalValue">$0.00</span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <!-- Photo Lightbox Overlay -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-content" id="lightboxImg" src="" alt="Enlarged view">
+    <div id="lightboxCaption"></div>
+  </div>
+
+  <!-- Client-side Logic Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
